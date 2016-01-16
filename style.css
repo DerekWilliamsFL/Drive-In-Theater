@@ -1,0 +1,48 @@
+body {
+	background: black;
+}
+
+#container{
+	margin: 0 auto;
+	width: 975px;
+	height: 585px;
+	margin-top:10%;
+	background-image: url(drive.jpg);
+	/*background-image: url(http://oi65.tinypic.com/b4dmp3.jpg);*/
+	background-size: cover;
+	position: relative;
+
+} 
+
+
+#darken {
+	margin: 0 auto;
+	width: 975px;
+	height: 585px;
+	margin-top:10%;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(drive.jpg);
+	/*background-image: url(http://oi65.tinypic.com/b4dmp3.jpg);*/
+	background-size: cover;
+	position: relative;
+	transition: 2s;
+}
+
+#screen {
+	height: 310px;
+	width:	514px;
+	position: absolute;
+	left: 249px;
+	top: 25px;
+	/*background-image: url(filmstrip.png);
+	background-size: cover;*/
+}
+
+#screen video {
+    position: absolute;
+    z-index: 100;
+}
+
+video#fillwidth {
+	min-width: 100%;
+	height: 100%;
+}

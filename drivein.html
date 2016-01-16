@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <!--<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>-->
+  <title>Drive In</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+	<div id="container">
+		<div id="screen">
+			<video id="fillwidth" controls="controls" poster="http://oi68.tinypic.com/30dl094.jpg" preload="true"> <!--poster.png relative-->
+				<source src="https://dl.dropbox.com/s/iliguzquzyvro95/Ads.mov" type="video/mov"/>
+				<source src="https://dl.dropbox.com/s/jufkrdmfysbpl67/Ads.mp4" type="video/mp4" />
+				<source src="https://dl.dropbox.com/s/zxtjckokc75vmia/Ads.ogv" type="video/oog" />
+			Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var movie = document.getElementById("fillwidth");
+	var container = document.getElementById("container");
+	var play = function() {
+			container.setAttribute("id", "darken");
+		}
+	
+	movie.addEventListener("playing", play, false);
+	</script>
+</body>
+</html>
