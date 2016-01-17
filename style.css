@@ -20,7 +20,7 @@ body {
 	width: 975px;
 	height: 585px;
 	margin-top:10%;
-	/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(drive.jpg);*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://oi65.tinypic.com/b4dmp3.jpg);
 	background-image: url(http://oi65.tinypic.com/b4dmp3.jpg);
 	background-size: cover;
 	position: relative;
