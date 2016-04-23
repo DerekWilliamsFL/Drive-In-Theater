@@ -1,5 +1,7 @@
 body {
 	background: black;
+	margin: 0;
+	padding: 0;
 }
 
 #container{
@@ -8,18 +10,22 @@ body {
 	/*background-image: url(drive.jpg);*/
 	background-image: url(http://oi65.tinypic.com/b4dmp3.jpg);
 	background-size: cover;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 
 } 
 
 
 #darken {
-	margin: 0 auto;
 	width: 975px;
 	height: 585px;
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://oi65.tinypic.com/b4dmp3.jpg);;
 	background-size: cover;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
 
 #screen {
@@ -43,21 +49,22 @@ video#fillwidth {
 @media only screen and (max-width: 1024px) {
 
 	#container{
-	-webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.8); /* FF3.5+ */
-      -ms-transform: scale(0.8); /* IE9 */
-       -o-transform: scale(0.8); /* Opera 10.5+ */
-          transform: scale(0.8);
-
+	-webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.7); /* FF3.5+ */
+      -ms-transform: scale(0.7); /* IE9 */
+       -o-transform: scale(0.7); /* Opera 10.5+ */
+          transform: scale(0.7);
+transform-origin:top left;
 	} 
 
 
 	#darken {
-	-webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.8); /* FF3.5+ */
-      -ms-transform: scale(0.8); /* IE9 */
-       -o-transform: scale(0.8); /* Opera 10.5+ */
-          transform: scale(0.8);
+	-webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.7); /* FF3.5+ */
+      -ms-transform: scale(0.7); /* IE9 */
+       -o-transform: scale(0.7); /* Opera 10.5+ */
+          transform: scale(0.7);
+          transform-origin:top left;
 	}
 
 	#screen {
@@ -70,35 +77,45 @@ video#fillwidth {
 }
 
 @media only screen and (max-width: 480px), and (max-device-width: 480px) {
-
-	body {
-
-	}
 	#container{
-	-webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.6); /* FF3.5+ */
-      -ms-transform: scale(0.6); /* IE9 */
-       -o-transform: scale(0.6); /* Opera 10.5+ */
-          transform: scale(0.6);
-
+	-webkit-transform: scale(0.48); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.48); /* FF3.5+ */
+      -ms-transform: scale(0.48); /* IE9 */
+       -o-transform: scale(0.48); /* Opera 10.5+ */
+          transform: scale(0.48);
+transform-origin:top left;
 	} 
 
 
 	#darken {
-	-webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.6); /* FF3.5+ */
-      -ms-transform: scale(0.6); /* IE9 */
-       -o-transform: scale(0.6); /* Opera 10.5+ */
-          transform: scale(0.6);
+	-webkit-transform: scale(0.48); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.48); /* FF3.5+ */
+      -ms-transform: scale(0.48); /* IE9 */
+       -o-transform: scale(0.48); /* Opera 10.5+ */
+          transform: scale(0.48);
+          transform-origin:top left;
 	}
 
-	#screen {
-		height: 230px;
-		width:	105px;
-		position: absolute;
-		left: 235px;
-		top: 25px;
-	}
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+	#container{
+	-webkit-transform: scale(0.48); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.48); /* FF3.5+ */
+      -ms-transform: scale(0.48); /* IE9 */
+       -o-transform: scale(0.48); /* Opera 10.5+ */
+          transform: scale(0.48);
+transform-origin:top left;
+	} 
+
+
+	#darken {
+	-webkit-transform: scale(0.48); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.48); /* FF3.5+ */
+      -ms-transform: scale(0.48); /* IE9 */
+       -o-transform: scale(0.48); /* Opera 10.5+ */
+          transform: scale(0.48);
+          transform-origin:top left;
+	}
+ }
