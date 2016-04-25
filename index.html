@@ -39,7 +39,7 @@
 			container.setAttribute("id", "darken");
 		}
 	
-	movie.addEventListener("playing", play, false);
+	
 
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
 	// Other way to detect iOS
@@ -54,6 +54,8 @@
     		framesPerSecond: 25,
     		audio: true
 	    });
+
+	    movie.addEventListener("playing", play, false);
 	}
 	else {
 	    // Use HTML5 video
