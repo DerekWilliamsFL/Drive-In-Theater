@@ -44,6 +44,25 @@ body {
 video#fillwidth {
 	min-width: 100%;
 	height: 100%;
+
+}
+.video-timeline {
+	background: rgba(255, 255, 255, 0.4);
+    bottom: 0;
+    cursor: pointer;
+    height: 12px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transition: all 0.2s;
+    width: 100%;
+    z-index: 12;
+}
+
+.video-timeline-passed {
+    background: #E81D31;
+    height: 100%;
+    width: 0;
 }
 
 @media only screen and (max-width: 1024px) {
