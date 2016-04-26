@@ -95,14 +95,10 @@ transform-origin:top left;
 		z-index: 40;
 	}
 
-	.black {
-		height: 310px;
-		width:	505px;
-		position: absolute;
-		left: 250px;
-		top: 25px;
-		background: url("http://oi68.tinypic.com/30dl094.jpg");
+	video.loading {
+		background: black url"http://oi68.tinypic.com/30dl094.jpg") center center no-repeat;
 	}
+
 }
 
 @media only screen and (max-width: 480px), and (max-device-width: 480px) {

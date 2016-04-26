@@ -17,8 +17,9 @@
 			Your browser does not support the video tag.
 			</video>
 		</div>-->
-		<div class="black">
+		
 		<div id="screen">
+			<div class="black">
 			<video class="js-video" id="fillwidth" controls="controls" poster="http://oi68.tinypic.com/30dl094.jpg" preload="true">
 				<source src="https://dl.dropbox.com/s/iliguzquzyvro95/Ads.mov" type="video/mov"/>
 				<source src="https://dl.dropbox.com/s/jufkrdmfysbpl67/Ads.mp4" type="video/mp4" />
@@ -34,6 +35,7 @@
 	</div>
 </div>
 	<script src="canvas-video.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	var movie = document.getElementById("fillwidth");
 	var container = document.getElementById("container");
@@ -41,7 +43,13 @@
 			container.setAttribute("id", "darken");
 		}
 	
-	
+	$('#fillwidth').on('loadstart', function (event) {
+	    $(this).addClass('loading');
+	  });
+	  $('#fillwidth').on('canplay', function (event) {
+	    $(this).removeClass('loading');
+	    $(this).attr('poster', '');
+	  });
 
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
 
