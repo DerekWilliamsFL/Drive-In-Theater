@@ -92,6 +92,16 @@ transform-origin:top left;
 		position: absolute;
 		left: 250px;
 		top: 25px;
+		z-index: 40;
+	}
+
+	.black {
+		height: 310px;
+		width:	505px;
+		position: absolute;
+		left: 250px;
+		top: 25px;
+		background: black;
 	}
 }
 
