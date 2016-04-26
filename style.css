@@ -30,10 +30,10 @@ body {
 
 #screen {
 	height: 310px;
-	width:	514px;
+	width:	450px;
 	position: absolute;
 	left: 249px;
-	top: 25px;
+	top: 30px;
 }
 
 #screen video {

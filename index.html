@@ -24,7 +24,7 @@
 				<source src="https://dl.dropbox.com/s/zxtjckokc75vmia/Ads.ogv" type="video/oog" />
 			Your browser does not support the video tag.
 			</video>
-			<canvas class="js-canvas" width="505" height="310"></canvas>
+			<canvas class="js-canvas" width="505" height="300"></canvas>
 			<div class="video-timeline js-timeline">
 				<div class="video-timeline-passed js-timeline-passed">
 			</div>
@@ -42,11 +42,8 @@
 	
 
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
-	// Other way to detect iOS
-	// var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
 	if (isIphone) {
-	    // Init CanvasVideoPlayer here
 	    new CanvasVideoPlayer({
 	        videoSelector: '.js-video',
     		canvasSelector: '.js-canvas',
