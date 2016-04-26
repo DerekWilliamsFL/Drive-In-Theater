@@ -92,13 +92,7 @@ transform-origin:top left;
 		position: absolute;
 		left: 250px;
 		top: 25px;
-		z-index: 40;
 	}
-
-	video.loading {
-		background: black url"http://oi68.tinypic.com/30dl094.jpg") center center no-repeat;
-	}
-
 }
 
 @media only screen and (max-width: 480px), and (max-device-width: 480px) {
