@@ -17,7 +17,7 @@
 			Your browser does not support the video tag.
 			</video>
 		</div>-->
-		<div class="black"></div>
+		<div id="placeholder"></div>
 		<div id="screen">
 			<video class="js-video" id="fillwidth" controls="controls" poster="http://oi68.tinypic.com/30dl094.jpg" preload="true">
 				<source src="https://dl.dropbox.com/s/iliguzquzyvro95/Ads.mov" type="video/mov"/>
@@ -45,6 +45,7 @@
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
 
 	if (isIphone) {
+
 	    new CanvasVideoPlayer({
 	        videoSelector: '.js-video',
     		canvasSelector: '.js-canvas',
@@ -52,7 +53,8 @@
     		framesPerSecond: 25,
     		audio: true,
 	    });
-
+	    var placeholder = document.getElementById("placeholder");
+	    placeholder.style.visibility = "visible";
 	    movie.addEventListener("playing", play, false);
 	}
 	else {
