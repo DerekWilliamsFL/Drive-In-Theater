@@ -34,9 +34,12 @@
 	movie.addEventListener("playing", play, false);
 
 
-	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
+	//var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
 
-	if (isIphone) {
+	//if (isIphone) {
+
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
 
 	    new CanvasVideoPlayer({
 	        videoSelector: '.js-video',
@@ -52,9 +55,7 @@
 		CanvasVideoPlayer.playing = false;
 	}
 	}
-	else {
-	    // Use HTML5 video
-	}
+}
 	</script>
 </body>
 </html>
