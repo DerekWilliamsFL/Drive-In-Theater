@@ -26,12 +26,6 @@
 </div>
 	<script src="canvas-video.js"></script>
 	<script type="text/javascript">
-	var movie = document.getElementById("fillwidth");
-	var container = document.getElementById("container");
-	var play = function() {
-			container.setAttribute("id", "darken");
-		}
-	movie.addEventListener("playing", play, false);
 
 
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
@@ -48,9 +42,19 @@
 	    var placeholder = document.getElementById("placeholder");
 	    placeholder.style.visibility = "visible";
 	    
-	    var iPhoneStop = function() {
+	}
+
+	var movie = document.getElementById("fillwidth");
+	var container = document.getElementById("container");
+	var play = function() {
+			container.setAttribute("id", "darken");
+		}
+	movie.addEventListener("playing", play, false);
+	var iPhoneStop = function() {
 		CanvasVideoPlayer.playing = false;
 	}
+	else {
+	    // Use HTML5 video
 	}
 	</script>
 </body>
