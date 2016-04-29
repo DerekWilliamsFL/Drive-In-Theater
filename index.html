@@ -32,9 +32,7 @@
 			container.setAttribute("id", "darken");
 		}
 	movie.addEventListener("playing", play, false);
-	var iPhoneStop = function() {
-		CanvasVideoPlayer.playing = false;
-	}
+
 
 	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
 
@@ -50,6 +48,9 @@
 	    var placeholder = document.getElementById("placeholder");
 	    placeholder.style.visibility = "visible";
 	    
+	    var iPhoneStop = function() {
+		CanvasVideoPlayer.playing = false;
+	}
 	}
 	else {
 	    // Use HTML5 video
