@@ -2,12 +2,12 @@ body {
 	background: black;
 	margin: 0;
 	padding: 0;
+	
 }
 
 #container{
 	width: 975px;
 	height: 585px;
-	/*background-image: url(drive.jpg);*/
 	background-image: url(http://oi65.tinypic.com/b4dmp3.jpg);
 	background-size: cover;
 	position: absolute;
