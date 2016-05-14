@@ -66,11 +66,14 @@ video#fillwidth {
     width: 0;
 }
 
-.placeholder {
-	height: 100%;
-	width:	100%;
-	background: url("http://oi68.tinypic.com/30dl094.jpg");
-
+#placeholder {
+	height: 310px;
+	width:	450px;
+	position: absolute;
+	left: 249px;
+	top: 25px;
+	z-index: 30;
+	background-color: black
 }
 
 
@@ -104,10 +107,16 @@ transform-origin:top left;
 		z-index: 50;
 	}
 
-	.placeholder {
-	height: 100%;
-	width:	100%;
-	background: url("http://oi68.tinypic.com/30dl094.jpg");
+	#placeholder {
+	height: 310px;
+	width:	505px;
+	position: absolute;
+	left: 250px;
+	top: 25px;
+	z-index: 30;
+	background: url("http://oi68.tinypic.com/30dl094.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 }
 
@@ -130,13 +139,6 @@ transform-origin:top left;
           transform: scale(0.48);
           transform-origin:top left;
 	}
-
-	.placeholder {
-	height: 100%;
-	width:	100%;
-	background: url("http://oi68.tinypic.com/30dl094.jpg");
-}
-
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
