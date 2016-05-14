@@ -29,17 +29,15 @@
 	<script type="text/javascript">
 
 
-	var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	//var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-	if (iOS) {
-	    var canvasVideo = new CanvasVideoPlayer({
-	        videoSelector: '.js-video',
-    		canvasSelector: '.js-canvas',
-    		timelineSelector: '.js-timeline',
-    		framesPerSecond: 25,
-    		audio: true,
-	    });
-	}
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.js-video',
+		canvasSelector: '.js-canvas',
+		timelineSelector: '.js-timeline',
+		framesPerSecond: 25,
+		audio: true,
+    });
 
 	var movie = document.getElementById("fillwidth");
 	var container = document.getElementById("container");
