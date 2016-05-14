@@ -29,9 +29,9 @@
 	<script type="text/javascript">
 
 
-	var isIphone = navigator.userAgent.match(/iPhone|iPad|iPod/i) >= 0;
+	var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-	if (isIphone) {
+	if (iOS) {
 	    var canvasVideo = new CanvasVideoPlayer({
 	        videoSelector: '.js-video',
     		canvasSelector: '.js-canvas',
