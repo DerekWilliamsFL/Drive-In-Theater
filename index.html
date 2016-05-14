@@ -29,11 +29,9 @@
 	<script type="text/javascript">
 
 
-	var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
+	var isIphone = navigator.userAgent.match(/iPhone|iPad|iPod/i) >= 0;
 
 	if (isIphone) {
-		var movie = document.getElementById("fillwidth");
-		movie.visibility = 'hidden';
 	    var canvasVideo = new CanvasVideoPlayer({
 	        videoSelector: '.js-video',
     		canvasSelector: '.js-canvas',
